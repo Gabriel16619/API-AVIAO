@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -11,48 +14,87 @@ body{
   font-family: "Poppins", sans-serif;
   background-color: pink;
 }
+
 header{
-  height: 90px;
-  width: 100%;
-  top: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--default-padding);
-  background-color: white;
-  z-index: 999;
+    display: flex; 
+    height: 7vw;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--default-padding);
+    background-color: white;
+    z-index: 999;
 }
 .logo{
-  display: flex;
-  flex-direction: column;
-  height: 235px;
-  width: 352px;
+    display: flex;
+    flex-direction: column;
+    height: 8vw;
+    width: 12vw;
 }
 
 a{
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 .menu {
-  position: absolute;
-  left: 38%;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-   justify-content: center;
- font-size: 40px;
+    display: flex;
+    margin-right: 25vw;
+    left: 38vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    justify-content: center;
+   font-size: 1.5vw;
 }
 ul,ol,li{
-  list-style: none;
+    list-style: none;
+    gap: 1vw;
 }
 header li {
-  padding: 5px 10px;
-  transition: 0.5s;
+    display: flex;
+    margin-right: -1vw;
+    padding: 2vw 2vw;
+    transition: 0.5s;
 }
 header li:hover{
-  background-color: var(--secundary-color);
-  box-shadow: var(--default-shadow);
+    background-color: var(--secundary-color);
+    box-shadow: var(--default-shadow);
+    border-radius: 1vw;
 }
+
+.info-container {
+  position: fixed;
+  top: 10vh;
+  right: 5vw;
+  width: 35vw;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.2vw solid white;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+  padding: 2vh 2vw;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-header h2 {
+  margin: 0;
+  font-size: 2vw;
+}
+
+#closeBtn {
+  background: transparent;
+  border: none;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
 #map { height: 100vh; }
 .plane-icon {
   width: 100%;

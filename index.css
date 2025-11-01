@@ -5,20 +5,20 @@
 }
 
 
-
-:root{
+.root{
     --primary-color: white;
     --secundary-color: rgb(18, 123, 155);
     --default-shadow: 0 4px 6px #0004;
     --default-padding: 0 40px;
 }
+
 html{
     scroll-behavior: smooth;
 }
 
 
 html, body{
-    height: 100%;
+   /*  height: 100%; */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ a{
 }
 .menu {
     display: flex;
-    margin-left: -45vw;
+    margin-right: 25vw;
     left: 38vw;
     display: flex;
     align-items: center;
@@ -72,15 +72,8 @@ header li:hover{
     border-radius: 1vw;
 }
 
-.containerButton{
-    display: flex;
-    height: 3vw;
-    width: 8em;
-    background-color: rgba(128, 128, 128, 0.479);
-}
-
 section{
-    height: 20vw;
+    /* height: 20vw; */
     background-color: rgb(135, 220, 228);
 }
 .home{
@@ -96,12 +89,12 @@ section{
     flex-direction: column;   
     justify-content: center;
     align-items: center;
-     margin-left: 56vw;
+     margin: 100vh;
      margin-top: 3vh;
     background-color: rgba(255, 255, 255, 0.322);
     border: 0.2vw solid white;
-    width: 55vh;
-    height: 25vh;              
+    width: 30vw;
+    height: 14vw;              
     border-radius: 3vh;          
   }
 
@@ -116,7 +109,9 @@ h2{
 }
 .textoContainer1{
     display: flex;
+    flex-direction: column;
     margin-left: 56vw;
+    margin-top: 30vw;
 }
 h3{
     display: flex;
@@ -129,20 +124,20 @@ h3{
     font-size: 1.1vw; 
 }
 .container-aviao2{
-    height: 40vh;
+     height: 24vw;  
     background-image: url(./figma-avião/Airplane-Transparent-Background-PNG.png);
     background-position:  30vw -1vw;
-    background-size: 110vh;
+    background-size: 60vw;
     background-repeat: no-repeat;
     display: grid;
-    background-color: rgb(21, 21, 112);
+    background-color: rgb(21, 21, 112);    
 }
 h4{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -10vw;
-    margin-left: 10vw;
+    margin-top: -13vw;
+    margin-left: 12vw;
     color: white;
     font-size: 1.1vw;
     z-index: 2;
@@ -151,14 +146,22 @@ h4{
      display: flex;
     flex-direction: column;   
     justify-content: center;
-    align-items: center;
      margin-left: 9vw;
-     margin-top: -35vh;
+     margin-top: 4vw;
     background-color: rgba(255, 255, 255, 0.548);
     border: 0.2vw solid white;
-    width: 50vh;
-    height: 30vh;              
+    width: 25vw;
+    height: 15vw;              
     border-radius: 3vh; 
+}
+
+h4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10vw;
+  margin-left: 4vw;
+  margin-top: 1vw;
 }
 
 h5{
@@ -166,22 +169,21 @@ h5{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 11vw;
-    margin-top: -17vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
     color: white;
-    white-space: pre-wrap;
     font-size: 1.1vw;
-    max-width: 35ch;
-
+    overflow-wrap: 3vw;
+  
 }
 .sessao-principal {
     background-color: white;
     width: 100vw;
     height: 40vw;
     display: flex;
-    flex-direction: column;     /* empilha os elementos */
-    justify-content: start;    /* centraliza verticalmente */
-    align-items: start;        /* centraliza horizontalmente */
+    flex-direction: column;    
+    justify-content: start;    
+    align-items: start;       
     gap: 0vw;     
 
   }
@@ -210,19 +212,20 @@ h5{
     flex-direction: column;   
     justify-content: center;
     align-items: center;
+    margin-top: 6vw;
     background-color: white;
-    width: 100%;
-    gap: 5vw;                
-    padding: 20vw 0;          
+    width: 100%;               
+    padding: 19vw 0;  
+     padding-bottom: 5vw;        
   }
   
   .linha1 {
     display: flex;
-    justify-content: center;  /* centraliza horizontalmente os containers */
-    align-items: center;      /* centraliza verticalmente */
+    justify-content: center;  
+    align-items: center;      
     margin-top: -25vw;
-    gap: 10vw;                /* espaço entre containers */
-    flex-wrap: wrap;          /* quebra linha se a tela for pequena */
+    gap: 7vw;                
+    flex-wrap: wrap;         
     width: 100%;
   }
 
@@ -231,32 +234,69 @@ h5{
     justify-content: center;
     align-items: center;
     margin-top: -4vw;
-    gap: 10vw;
+    gap: 7vw;
   }
   
-  .container {
-    display: flex;
-    flex-direction: column;   /* empilha os textos e o botão */
-    justify-content: center;  /* centraliza verticalmente */
-    margin-top: 7vw;
-    align-items: center;      /* centraliza horizontalmente */
-    gap: 10vw;                /* espaçamento interno entre elementos */
-    width: 25vw;
-    height: 20vw;
-    background-color: orange;
-    border: 3px solid black;
-    box-shadow: 0 1vw 1px #0003; /* sombra leve pra destacar */
-    transition: transform 0.2s ease;
-  }
-  .imagemMapa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0vw;
-    margin-top: 12.1vw;
-    height: 100vw;
-    width: 24.6vw;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+  background: white;
+  border-radius: 1vw;
+  width: 25vw;
+  height: 28vw;
+  padding: 1vw;
+  box-shadow: 0 0.4vw 0.6vw #0003;
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: translateY(-0.5vw);
+}
+
+.imagemMapa {
+  width: 100%;
+  height: auto;
+  border-radius: 1vw;
+  object-fit: cover;
+}
+
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  text-align: center;
+}
+
+.container h5 {
+  font-size: 1.2vw;
+  color: #003366;
+}
+
+.container h6 {
+  font-size: 1vw;
+  color: #555;
+}
+
+.mapaVoo {
+  background: rgb(18, 123, 155);
+  color: white;
+  border: none;
+  border-radius: 1vw;
+  padding: 0.8vw 1.6vw;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mapaVoo:hover {
+  background: rgb(11, 90, 120);
+}
+
   .container2{
     display: flex;
     flex-direction: column;
@@ -264,54 +304,81 @@ h5{
     align-items: center;
     margin-left: -10vw;
     margin-top: 12.1vw;
+  }
+  .imagemMarcas{
+  display: flex;
+  background: rgba(128, 128, 128, 0.295);
+  color: white;
+  height: 13vw;
+  margin-top: -12vw;
+  margin-left: 10vw;
+  border: none;
+  border-radius: 1vw;
+  padding: 0.8vw 1.6vw;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+.h6{
+  display: flex;
+  margin-left: 100vw;
+}
+.conteudo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vw;
+  margin-left: 9vw;
+  gap: 1vw;
+  text-align: center;
+}
 
-  }
-    .imagemMarcas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9vw;
-    margin-top: -30vw;
-    height: -2vw;
-    width: 24.6vw;
-  }
+
   .container3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: -6vw;
+    gap: 4vw;
     margin-left: -10vw;
     margin-top: 12.1vw
   } 
 
    .imageApi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10vw;
-    margin-top: -9.6vw;
-    height: -2vw;
-    width: 24.6vw;
+  display: flex;
+  color: white;
+  height: 13vw;
+  margin-top: -12vw;
+  margin-left: 10vw;
+  border: none;
+  border-radius: 1vw;
+  padding: 0.8vw 1.6vw;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: 0.3s;
   }
+  
+  
 
   .buttonApi{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 8vw;
-    margin-top: 20vw;
+    margin-left: 11vw;
+    margin-top: -14vw;
     width: 7vw;
     height: 4vw;
-    background-color: yellow;
+    /* background-color: yellow; */
   }
-  .API{
+  .h5{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 70vw;
+    row-gap: 1vw;
+    margin-top: 11vw;
   }
+
   .container4{
     display: flex;
     flex-direction: column;
@@ -320,15 +387,36 @@ h5{
     margin-left: -10vw;
     margin-top: 12.1vw
   }
+  
+.conteudo4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vw;
+  justify-content: center;
+  gap: 1vw;
+  text-align: center;
+}
+.conteudo4 h6{
+ display: flex;
+ flex-direction: column;
+ gap: 3vw;
+}
 
   .imageGit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0vw;
-    margin-top: -10vw;
-    height: -2vw;
-    width: 24.6vw;
+  display: flex;
+  background: rgba(128, 128, 128, 0.295);
+  color: white;
+  height: 12vw;
+  width: 23vw;
+  margin-top: -12vw;
+  margin-left: 10vw;
+  border: none;
+  border-radius: 1vw;
+  padding: 0.8vw 1.6vw;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: 0.3s;
   }
 
   footer{
@@ -337,7 +425,8 @@ h5{
     margin-top: 30vw;
     background-color: rgb(0, 132, 255);
     width: 100%;
-    height: 30vw;
+    height: 10vw;
+    padding-top: 6vw;
   }
   
 
