@@ -17,7 +17,7 @@ html{
 }
 
 
-html, body{
+body{
    /*  height: 100%; */
     width: 100%;
     margin: 0;
@@ -102,22 +102,18 @@ h2{
     display: flex;
     flex-direction: column;
    justify-content: flex-start;
-    margin-top: -8vw; 
+    margin-top: vw; 
     margin-right: 1vw;
     color: white;
     font-size: 1.2vw;
+    padding-bottom: 1vw;
 }
-.textoContainer1{
-    display: flex;
-    flex-direction: column;
-    margin-left: 56vw;
-    margin-top: 30vw;
-}
+
 h3{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: -8vw;
+    margin-top: 1vw;
     margin-left: 1vw;
     color: white;
     max-width: 40ch;
@@ -179,7 +175,7 @@ h5{
 .sessao-principal {
     background-color: white;
     width: 100vw;
-    height: 40vw;
+    height: 35vw;
     display: flex;
     flex-direction: column;    
     justify-content: start;    
@@ -251,6 +247,12 @@ h5{
   transition: transform 0.3s;
 }
 
+.container h6 {
+  font-size: 1vw;
+  margin-right: 3vw;
+  color: #555;
+}
+
 .container:hover {
   transform: translateY(-0.5vw);
 }
@@ -273,14 +275,28 @@ h5{
 }
 
 .container h5 {
+  display: flex;
   font-size: 1.2vw;
+  margin-top: 1vw;
+  margin-left: 3vw;
   color: #003366;
 }
 
-.container h6 {
-  font-size: 1vw;
-  color: #555;
+.container1 h5{
+  display: flex;
+  font-size: 1.2vw;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  color: #003366;
 }
+.container1 a{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+  margin-top: 2vw;
+}
+
+
 
 .mapaVoo {
   background: rgb(18, 123, 155);
@@ -319,9 +335,26 @@ h5{
   cursor: pointer;
   transition: 0.3s;
   }
-.h6{
+
+.container2 h5{
   display: flex;
-  margin-left: 100vw;
+  font-size: 1.2vw;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  color: #003366;
+}
+ 
+.container2 h6{
+  font-size: 1vw;
+  margin-left: 4vw;
+  margin-top: 1vw;
+  color: #555;
+}
+.container2 a{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+  margin-top: 1vw;
 }
 .conteudo2 {
   display: flex;
@@ -359,8 +392,6 @@ h5{
   transition: 0.3s;
   }
   
-  
-
   .buttonApi{
     display: flex;
     flex-direction: column;
@@ -372,12 +403,27 @@ h5{
     height: 4vw;
     /* background-color: yellow; */
   }
-  .h5{
+  .container3 h5{
+  display: flex;
+  font-size: 1.2vw;
+  margin-top: 0vw;
+  margin-left: 8vw;
+  color: #003366;
+  }
+  .container3 h6{
+  font-size: 1vw;
+  margin-left: 13vw;
+  margin-top: -2vw;
+  color: #555;
+  
+  }
+  .container3 a{
     display: flex;
     flex-direction: column;
-    row-gap: 1vw;
-    margin-top: 11vw;
+    margin-left: 8vw;
+    margin-top: -3vw;
   }
+ 
 
   .container4{
     display: flex;
@@ -397,10 +443,24 @@ h5{
   gap: 1vw;
   text-align: center;
 }
+.container4 h5{
+  display: flex;
+  font-size: 1.2vw;
+  margin-top: 0vw;
+  margin-left: 9vw;
+  color: #003366;
+}
 .conteudo4 h6{
- display: flex;
- flex-direction: column;
- gap: 3vw;
+  font-size: 1vw;
+  margin-left: 12vw;
+  margin-top: 1vw;
+  color: #555;
+}
+.container4 a{
+  display: flex;
+  flex-direction: column;
+  margin-left: 9vw;
+  margin-top: 0vw;
 }
 
   .imageGit{
@@ -419,17 +479,63 @@ h5{
   transition: 0.3s;
   }
 
-  footer{
+  .h5{
     display: flex;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    margin-left: 3vw;
+    color: #003366;
+  }
+  
+
+  footer{
+    display: flex; 
     justify-content: center;
     margin-top: 30vw;
     background-color: rgb(0, 132, 255);
     width: 100%;
-    height: 10vw;
     padding-top: 6vw;
+    gap: 30vw;
+    padding-bottom: 0vw;
   }
-  
 
+  .containerSobre{
+    flex-direction: column;
+    display: flex;
+    height: 15vw;
+    width: 15vw;
+    
+  }
+  .containerSobre h5{
+    flex-direction: column;
+    font-size: 1.2vw;
+    margin-top: 0vw;
+    margin-right: 10vw;
+    color: white;
+
+  }
+  .containerSobre h6{
+    font-size: 1vw;
+    margin-left: 0vw;
+    margin-top: 2vw;
+    color: white;
+  }
+  .containerProdutos{
+    flex-direction: column;
+    height: 15vw;
+    width: 22vw;
+ 
+  }
+
+ 
+  .containerProdutos h6{
+    font-size: 1vw;
+    margin-left: 2vw;
+    margin-top: 0vw;
+    color: white;
+    padding-top: 1vw;
+  }
+ 
   
 
 

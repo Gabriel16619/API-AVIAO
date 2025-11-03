@@ -47,7 +47,7 @@ async function getFlights() {
       if (lat && lon) {
         const marker = L.marker([lat, lon]).addTo(map);
 
-        // Evento de clique no avião
+        // vai acontecer ao clique no avião
         marker.on('click', (e) => {
           e.originalEvent.stopPropagation(); // impede que o clique feche o container
 
